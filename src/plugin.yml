@@ -1,0 +1,9 @@
+name: AssassinCraft Races
+version: 0.1.1
+main: me.monstuhs.assassincraftraces.AssassinCraftRaces
+description: Races plugin for AssassinCraft.
+author: monstuhs
+commands:
+   stats:
+      description: Show your currents stats
+      usage: /<command>
