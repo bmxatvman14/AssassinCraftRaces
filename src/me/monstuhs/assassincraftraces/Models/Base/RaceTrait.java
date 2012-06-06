@@ -10,12 +10,8 @@ import org.bukkit.event.Event;
  *
  * @author James
  */
-public abstract class RaceTrait {
+public interface RaceTrait {
     
-    private static String _name;
-    private static String _description;
-    private Event _eventsHandled;
-    
-    public abstract void HandleEvent(Event event);
-    
+    boolean HandlesEvent(Class<Event> eventClass);
+    void HandleEvent(Event event);    
 }
