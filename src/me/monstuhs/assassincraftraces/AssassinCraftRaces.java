@@ -4,16 +4,21 @@
  */
 package me.monstuhs.assassincraftraces;
 
+import org.bukkit.Bukkit;
+import org.bukkit.plugin.java.JavaPlugin;
+
 /**
  *
  * @author James
  */
-public class AssassinCraftRaces {
+public class AssassinCraftRaces extends JavaPlugin {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    @Override
+    public void onDisable() {
+        Bukkit.getScheduler().cancelAllTasks();
+    }
+
+    @Override
+    public void onEnable() {
     }
 }
